@@ -1,5 +1,5 @@
 import React from "react";
-import PostContainer from "./components/PhotoContainer";
+import PhotoContainer from "./components/PhotoContainer";
 
 import "./App.css";
 
