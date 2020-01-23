@@ -2,6 +2,8 @@
 import React, {useState, useEffect} from "react";
 import Photo from "./Photo";
 import axios from "axios";
+import styled from "styled-components";
+
 
 const PhotoContainer = props => {
     console.log(props);
@@ -12,7 +14,7 @@ const PhotoContainer = props => {
             .then(response => {
                 console.log("hello!", response);
                 setAsop(response.data);
-                console.log("me again", asop.title);
+                // console.log("me again", asop.title);
             })
             .catch(error => {
                 console.log("Data is not returning", error)
@@ -22,7 +24,7 @@ const PhotoContainer = props => {
        <div className="photoOfTheDay">
          
             <Photo 
-                key={asop.hdurl}
+                key={asop.date}
                 title={asop.title}
                 date={asop.date}
                 url={asop.url}
