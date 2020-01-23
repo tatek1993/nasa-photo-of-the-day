@@ -20,14 +20,16 @@ const PhotoContainer = props => {
     }, []);
    return (
        <div className="photoOfTheDay">
+         
             <Photo 
                 key={asop.hdurl}
                 title={asop.title}
                 date={asop.date}
                 url={asop.url}
-                explaination={asop.explaination}
+                explanation={asop.explanation}
                 copyright={asop.copyright}
             /> 
+
                      
             {console.log("woof", asop.date)}
        </div>
