@@ -21,6 +21,7 @@ const ButtonStyle = styled.button `
     width: 40%;
     height: 50px;
     margin: 5%;
+    border: 3px solid #F24222;
     border-radius: 10px;
     font-family: 'Audiowide', cursive;
     font-size: 1.5rem;

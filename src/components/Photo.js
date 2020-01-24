@@ -39,7 +39,7 @@ const CardImgStyle = styled.img `
     border: 10px solid white;
 `;
 const Copyright = styled.p `
-    padding-top: 1%;
+    padding: 3%;
     font-size: .9rem;
 `;
 
