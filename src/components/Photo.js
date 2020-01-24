@@ -46,15 +46,15 @@ const Copyright = styled.p `
 
 
 const Photo = (props) => {
+    console.log("WAH", props);
     return (
       <PhotoTile>
         <Card>
-        
-            <Title>{props.title}</Title>
-            <CardSubtitle>{props.date}</CardSubtitle>
-            <CardImgStyle top width="80%" src={props.url} alt={props.title} />
-            <Explanation>{props.explanation}</Explanation>
-            <Copyright>Image Credit & Copyright: {props.copyright}</Copyright>
+            <Title>{props.data.title}</Title>
+            <CardSubtitle>{props.data.date}</CardSubtitle>
+            <CardImgStyle top width="80%" src={props.data.url} alt={props.data.title} />
+            <Explanation>{props.data.explanation}</Explanation>
+            <Copyright>Image Credit & Copyright: {props.data.copyright}</Copyright>
 
         </Card>
       </PhotoTile>

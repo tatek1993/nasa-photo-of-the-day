@@ -37,6 +37,7 @@ const PhotoContainer = props => {
             .then(response => {
                 console.log("hello!", response);
                 setAsop(response.data);
+                //asop = response.data now
                 // console.log("me again", asop.title);
             })
             .catch(error => {
@@ -47,11 +48,12 @@ const PhotoContainer = props => {
        <PODContainer>         
             <Photo 
                 key={asop.date}
-                title={asop.title}
-                date={asop.date}
-                url={asop.url}
-                explanation={asop.explanation}
-                copyright={asop.copyright}
+                // title={asop.title}
+                // date={asop.date}
+                // url={asop.url}
+                // explanation={asop.explanation}
+                // copyright={asop.copyright}
+                data={asop}
             />     
             <ButtonContainer>
             <ButtonStyle>Previous</ButtonStyle>
