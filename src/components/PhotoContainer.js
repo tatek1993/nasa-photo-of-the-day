@@ -7,7 +7,25 @@ import styled from "styled-components";
 const PODContainer = styled.div`
     display: flex;
     justify-content: center;
-`
+    align-items: center;
+    flex-direction: column;
+`;
+
+const ButtonContainer = styled.div `
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+`;
+
+const ButtonStyle = styled.button `
+    width: 40%;
+    height: 50px;
+    margin: 5%;
+    border-radius: 10px;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.5rem;
+    color: #F24222;
+`;
 
 const PhotoContainer = props => {
     console.log(props);
@@ -25,8 +43,7 @@ const PhotoContainer = props => {
             });
     }, []);
    return (
-       <PODContainer>
-         
+       <PODContainer>         
             <Photo 
                 key={asop.date}
                 title={asop.title}
@@ -34,9 +51,11 @@ const PhotoContainer = props => {
                 url={asop.url}
                 explanation={asop.explanation}
                 copyright={asop.copyright}
-            /> 
-
-                     
+            />     
+            <ButtonContainer>
+            <ButtonStyle>Previous</ButtonStyle>
+            <ButtonStyle>Next</ButtonStyle>
+            </ButtonContainer>                
             {console.log("woof", asop.date)}
        </PODContainer>
    );
