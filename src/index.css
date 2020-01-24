@@ -5,8 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  font-family: 'Audiowide', cursive;
+  font-family: 'Press Start 2P', cursive;
+  /* font-family: 'Audiowide', cursive;
+  font-family: 'Share Tech Mono', monospace; */
+  
+}
 
+body #root {
+  background-image: url(/space-pattern.png);
+  background-repeat: repeat;
+  background-size: 500px;
+  
 }
 
 code {

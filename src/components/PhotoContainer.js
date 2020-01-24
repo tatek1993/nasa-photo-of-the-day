@@ -4,6 +4,10 @@ import Photo from "./Photo";
 import axios from "axios";
 import styled from "styled-components";
 
+const PODContainer = styled.div`
+    display: flex;
+    justify-content: center;
+`
 
 const PhotoContainer = props => {
     console.log(props);
@@ -21,7 +25,7 @@ const PhotoContainer = props => {
             });
     }, []);
    return (
-       <div className="photoOfTheDay">
+       <PODContainer>
          
             <Photo 
                 key={asop.date}
@@ -34,7 +38,7 @@ const PhotoContainer = props => {
 
                      
             {console.log("woof", asop.date)}
-       </div>
+       </PODContainer>
    );
 
 }
